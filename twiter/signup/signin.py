@@ -24,6 +24,7 @@ if __name__ == '__main__':
     time.sleep(3)
     driver.find_element_by_xpath()
     driver.find_element_by_class_name()
+    time.sleep()
     
     
     
