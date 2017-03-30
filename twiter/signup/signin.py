@@ -19,6 +19,7 @@ if __name__ == '__main__':
     driver.find_element_by_xpath().click()
     driver.find_element_by_id()
     driver.find_element_by_class_name()
+    time.sleep(1)
     
     
     
