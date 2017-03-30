@@ -14,7 +14,6 @@ if __name__ == '__main__':
     driver.find_element_by_id("password").send_keys("rach222")
     element=driver.find_element_by_class_name("js-current-language")
     e1=element.click()
-    time.sleep(1)
     driver.find_element_by_xpath("//(li[@role='presentation'])[7]/a[@class='js-language-link js-tooltip']").click()
     
     
