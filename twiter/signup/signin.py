@@ -13,9 +13,11 @@ if __name__ == '__main__':
     driver.find_element_by_id("email").send_keys("rachappahalinge@gmail.com")
     driver.find_element_by_id("password").send_keys("rach222")
     element=driver.find_element_by_class_name("js-current-language")
+    time.sleep(2)
     e1=element.click()
     time.sleep(2)
     driver.find_element_by_xpath().click()
+    driver.find_element_by_id()
     
     
     
