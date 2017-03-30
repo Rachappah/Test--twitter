@@ -22,6 +22,7 @@ if __name__ == '__main__':
     time.sleep(1)
     driver.find_element_by_xpath()
     time.sleep(3)
+    driver.find_element_by_xpath()
     
     
     
