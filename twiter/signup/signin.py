@@ -5,23 +5,14 @@ Created on 30/03/2017
 '''
 from selenium import webdriver
 import time
+from lib2to3.tests.support import driver
 if __name__ == '__main__':
     driver=webdriver.Firefox()
-    driver.get("https://www.Twitter.com")
-   
-    time.sleep(4)
-   
-    driver.find_element_by_xpath("//a[text()='Log in']").click()
-   #email
-    driver.find_element_by_name("session[username_or_email]").send_keys("rachappahalinge@gmail.com")
-   #password
-    driver.find_element_by_name("session[password]").send_keys("rach222")
-   #loginclick
-    driver.find_element_by_xpath("//input[@class='submit btn primary-btn js-submit']").click()
-    time.sleep(3)
-    #language
-    driver.find_element_by_xpath("//small[text()='Language:']").click()
-    time.sleep(1)
-    #english
-    driver.find_element_by_xpath("//a[text()='English UK']").click()
+    driver.get("https://twitter.com/signup?lang=en")
+    driver.find_element_by_id("full-name").send_keys("rachappa")
+    driver.find_element_by_id("email").send_keys("rachappahalinge@gmail.com")
+    driver.find_element_by_id("password").send_keys("rach222")
+    driver.find_element_by_class_name("js-current-language").click()
+    driver.find_element_by_xpath("//a[text()='Svenska']").click()
+    
     
