@@ -21,6 +21,7 @@ if __name__ == '__main__':
     time.sleep(3)
     #language
     driver.find_element_by_xpath("//small[text()='Language:']").click()
+    time.sleep(1)
     #english
     driver.find_element_by_xpath("//a[text()='English UK']").click()
     
